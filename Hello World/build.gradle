@@ -1,0 +1,36 @@
+version '1.0'
+
+apply plugin: 'java'
+
+repositories {
+  mavenCentral()
+
+  maven {
+    url "https://artifacts.eng.appianci.net/artifactory/maven-shared-dev"
+    credentials {
+      username "julian.grunauer"
+      password ""
+    }
+  }
+}
+
+dependencies {
+  compileOnly fileTree(dir: "libs/compileTime", include: "*.jar")
+  compileOnly 'com.appian:connected-systems-core:1.10.0-DEV-SNAPSHOT-c6bd6267'
+  implementation 'com.appian:connected-systems-client:1.4.0-SNAPSHOT-cb75a114'
+  testImplementation 'com.appian:connected-systems-core:1.2.0'
+}
+
+
+jar {
+  duplicatesStrategy = DuplicatesStrategy.FAIL
+  into('META-INF/lib') {
+    from(configurations.runtimeClasspath)
+  }
+
+  manifest {
+    attributes("Spring-Context": "*;publish-context:=false")
+  }
+}
+
+

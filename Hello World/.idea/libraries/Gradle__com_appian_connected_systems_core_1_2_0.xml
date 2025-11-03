@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: com.appian:connected-systems-core:1.2.0" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="com.appian" artifactId="connected-systems-core" version="1.2.0" baseVersion="1.2.0" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.appian/connected-systems-core/1.2.0/5e4d14dd5a4eb4c710a19bd8dec3cb38c6b2ad90/connected-systems-core-1.2.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

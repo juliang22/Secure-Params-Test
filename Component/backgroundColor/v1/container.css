@@ -1,0 +1,18 @@
+html, body, #container {
+  height: 400px;
+  margin: 0;
+  padding: 0;
+}
+
+#container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#printButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}

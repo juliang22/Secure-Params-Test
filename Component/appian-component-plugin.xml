@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<appian-component-plugin name="Background Color" key="com.mycorp.background.color">
+  <plugin-info>
+    <description>Provides a Background Color component to demo multi-select dropdowns</description>
+    <vendor name="Appian" url="http://www.appian.com" />
+    <support supported="true" email="support@appian.com" url="https://community.appian.com"/>
+    <version>1.0</version>
+    <icon-file>gridPlusLogo.svg</icon-file>
+  </plugin-info>
+
+  <component rule-name="backgroundColor" version="1.0.0">
+    <sdk-version>2.0.0</sdk-version>
+    <parameter>
+      <name>colors</name>
+      <category>input-only</category>
+      <type>
+        <enum multiple="true">
+          <choice>RED</choice>
+          <choice>BLUE</choice>
+        </enum>
+      </type>
+    </parameter>
+    <parameter>
+      <name>hidden</name>
+      <category>input-only</category>
+      <type>Variant</type>
+      <secure>hidden</secure>
+    </parameter>
+    <parameter>
+      <name>visible</name>
+      <category>input-only</category>
+      <type>Variant</type>
+      <secure>visible</secure>
+    </parameter>
+    <parameter>
+      <name>refresh</name>
+      <category>input-output</category>
+      <type>Variant</type>
+    </parameter>
+    <parameter>
+      <name>connectedSystem</name>
+      <category>input-output</category>
+      <type>ConnectedSystem</type>
+    </parameter>
+    <html-entry-point>index.html</html-entry-point>
+    <supported-user-agents>chrome firefox ie11 edge safari mobile</supported-user-agents>
+  </component>
+</appian-component-plugin>
