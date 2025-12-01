@@ -24,13 +24,13 @@
       <name>hidden</name>
       <category>input-only</category>
       <type>Variant</type>
-      <secure>hidden</secure>
+      <secured>hidden</secured>
     </parameter>
     <parameter>
       <name>visible</name>
       <category>input-only</category>
       <type>Variant</type>
-      <secure>visible</secure>
+      <secured>visible</secured>
     </parameter>
     <parameter>
       <name>refresh</name>
