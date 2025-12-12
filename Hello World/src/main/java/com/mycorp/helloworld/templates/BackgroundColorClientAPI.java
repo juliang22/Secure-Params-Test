@@ -17,6 +17,7 @@ import com.appiancorp.suiteapi.applications.ApplicationNotFoundException;
 import com.appiancorp.suiteapi.applications.ApplicationService;
 import com.appiancorp.suiteapi.common.ServiceLocator;
 import com.appiancorp.suiteapi.common.exceptions.PrivilegeException;
+import com.appiancorp.suiteapi.type.TypedValue;
 
 @TemplateId(name = "BackgroundColorClientAPI")
 public class BackgroundColorClientAPI extends SimpleClientApi {
@@ -52,11 +53,27 @@ public class BackgroundColorClientAPI extends SimpleClientApi {
 //    }
 
     simpleClientApiRequest.getPayload();
-      Map<String, Object> map = new HashMap<>();
-      System.out.println("Background Color Client API hit");
-      System.out.println("Payload: " + simpleClientApiRequest.getPayload());
-      System.out.println("Encrypted Payload: " + simpleClientApiRequest.getEncryptedPayload());
-      return new ClientApiResponse(map);
+      Map<String, Object> responseMap = new HashMap<>();
+    System.out.println("Background Color Client API hit");
+
+    System.out.println("Payload:");
+    for (Map.Entry<String, Object> entry : simpleClientApiRequest.getPayload().entrySet()) {
+      System.out.println("  " + entry.getKey() + " = " + entry.getValue());
+      responseMap.put("payload." + entry.getKey(), entry.getValue());
+    }
+
+    System.out.println("Encrypted Payload:");
+    for (Map.Entry<String, Object> entry : simpleClientApiRequest.getSecuredPayload().entrySet()) {
+      System.out.println("  " + entry.getKey() + " = " + entry.getValue());
+      responseMap.put(
+          "securedPayload." + entry.getKey(),
+          entry.getValue() instanceof TypedValue ?
+              entry.getValue().toString() :
+              entry.getValue()
+      );
+    }
+
+      return new ClientApiResponse(responseMap);
 
   }
 

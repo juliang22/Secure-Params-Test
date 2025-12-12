@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <appian-component-plugin name="Background Color" key="com.mycorp.background.color">
   <plugin-info>
-    <description>Provides a Background Color component to demo multi-select dropdowns</description>
+    <description>Provides a Background Color component to demo multi-select dropdowns.   "a!textField(
+    label: "Text",
+  )</description>
     <vendor name="Appian" url="http://www.appian.com" />
     <support supported="true" email="support@appian.com" url="https://community.appian.com"/>
     <version>1.0</version>
@@ -20,6 +22,297 @@
         </enum>
       </type>
     </parameter>
+
+<!-- Text parameters -->
+    <parameter>
+      <name>textNotSecured</name>
+      <category>input-only</category>
+      <type>Text</type>
+    </parameter>
+    <parameter>
+      <name>textHidden</name>
+      <category>input-only</category>
+      <type>Text</type>
+      <secured>hidden</secured>
+    </parameter>
+    <parameter>
+      <name>textVisible</name>
+      <category>input-only</category>
+      <type>Text</type>
+      <secured>visible</secured>
+    </parameter>
+    <parameter>
+      <name>textArrVisible</name>
+      <category>input-only</category>
+      <type>Text?list</type>
+      <secured>visible</secured>
+    </parameter>
+    <parameter>
+      <name>textArrHidden</name>
+      <category>input-only</category>
+      <type>Text?list</type>
+      <secured>hidden</secured>
+    </parameter>
+
+    <!-- Boolean parameters -->
+    <parameter>
+      <name>booleanNotSecured</name>
+      <category>input-only</category>
+      <type>Boolean</type>
+    </parameter>
+
+    <parameter>
+      <name>booleanHidden</name>
+      <category>input-only</category>
+      <type>Boolean</type>
+      <secured>hidden</secured>
+    </parameter>
+
+    <parameter>
+      <name>booleanVisible</name>
+      <category>input-only</category>
+      <type>Boolean</type>
+      <secured>visible</secured>
+    </parameter>
+
+    <parameter>
+      <name>booleanArrVisible</name>
+      <category>input-only</category>
+      <type>Boolean?list</type>
+      <secured>visible</secured>
+    </parameter>
+
+    <parameter>
+      <name>booleanArrHidden</name>
+      <category>input-only</category>
+      <type>Boolean?list</type>
+      <secured>hidden</secured>
+    </parameter>
+
+    <!-- Decimal parameters -->
+    <parameter>
+      <name>decimalNotSecured</name>
+      <category>input-only</category>
+      <type>Decimal</type>
+    </parameter>
+
+    <parameter>
+      <name>decimalHidden</name>
+      <category>input-only</category>
+      <type>Decimal</type>
+      <secured>hidden</secured>
+    </parameter>
+
+    <parameter>
+      <name>decimalVisible</name>
+      <category>input-only</category>
+      <type>Decimal</type>
+      <secured>visible</secured>
+    </parameter>
+
+    <parameter>
+      <name>decimalArrVisible</name>
+      <category>input-only</category>
+      <type>Decimal?list</type>
+      <secured>visible</secured>
+    </parameter>
+
+    <parameter>
+      <name>decimalArrHidden</name>
+      <category>input-only</category>
+      <type>Decimal?list</type>
+      <secured>hidden</secured>
+    </parameter>
+
+    <!-- Integer parameters -->
+    <parameter>
+      <name>integerNotSecured</name>
+      <category>input-only</category>
+      <type>Integer</type>
+    </parameter>
+
+    <parameter>
+      <name>integerHidden</name>
+      <category>input-only</category>
+      <type>Integer</type>
+      <secured>hidden</secured>
+    </parameter>
+
+    <parameter>
+      <name>integerVisible</name>
+      <category>input-only</category>
+      <type>Integer</type>
+      <secured>visible</secured>
+    </parameter>
+
+    <parameter>
+      <name>integerArrVisible</name>
+      <category>input-only</category>
+      <type>Integer?list</type>
+      <secured>visible</secured>
+    </parameter>
+
+    <parameter>
+      <name>integerArrHidden</name>
+      <category>input-only</category>
+      <type>Integer?list</type>
+      <secured>hidden</secured>
+    </parameter>
+
+    <!-- Dictionary parameters -->
+    <parameter>
+      <name>dictionaryNotSecured</name>
+      <category>input-only</category>
+      <type>Dictionary</type>
+    </parameter>
+
+    <parameter>
+      <name>dictionaryHidden</name>
+      <category>input-only</category>
+      <type>Dictionary</type>
+      <secured>hidden</secured>
+    </parameter>
+
+    <parameter>
+      <name>dictionaryVisible</name>
+      <category>input-only</category>
+      <type>Dictionary</type>
+      <secured>visible</secured>
+    </parameter>
+
+    <parameter>
+      <name>dictionaryArrVisible</name>
+      <category>input-only</category>
+      <type>Dictionary?list</type>
+      <secured>visible</secured>
+    </parameter>
+
+    <parameter>
+      <name>dictionaryArrHidden</name>
+      <category>input-only</category>
+      <type>Dictionary?list</type>
+      <secured>hidden</secured>
+    </parameter>   
+
+     <!-- Variant Parameters -->
+     <parameter>
+      <name>variantNotSecured</name>
+      <category>input-only</category>
+      <type>Variant</type>
+    </parameter>
+
+    <parameter>
+      <name>variantArrNotSecured</name>
+      <category>input-only</category>
+      <type>Variant?list</type>
+    </parameter>
+
+    <parameter>
+      <name>variantHidden</name>
+      <category>input-only</category>
+      <type>Variant</type>
+      <secured>hidden</secured>
+    </parameter>
+
+    <parameter>
+      <name>variantVisible</name>
+      <category>input-only</category>
+      <type>Variant</type>
+      <secured>visible</secured>
+    </parameter>
+
+    <parameter>
+      <name>variantArrVisible</name>
+      <category>input-only</category>
+      <type>Variant?list</type>
+      <secured>visible</secured>
+    </parameter>
+
+    <parameter>
+      <name>variantArrHidden</name>
+      <category>input-only</category>
+      <type>Variant?list</type>
+      <secured>hidden</secured>
+    </parameter>  
+    
+     <!-- Connected System Parameters -->
+    <parameter>
+      <name>connectedSystemNotSecured</name>
+      <category>input-only</category>
+      <type>ConnectedSystem</type>
+    </parameter>
+
+    <parameter>
+      <name>connectedSystemHidden</name>
+      <category>input-only</category>
+      <type>ConnectedSystem</type>
+      <secured>hidden</secured>
+    </parameter>
+
+    <parameter>
+      <name>connectedSystemVisible</name>
+      <category>input-only</category>
+      <type>ConnectedSystem</type>
+      <secured>visible</secured>
+    </parameter>
+
+<!-- No lists of connected systems supported -->
+    <!-- <parameter>
+      <name>connectedSystemArrVisible</name>
+      <category>input-only</category>
+      <type>ConnectedSystem?list</type>
+      <secured>visible</secured>
+    </parameter>
+
+    <parameter>
+      <name>connectedSystemArrHidden</name>
+      <category>input-only</category>
+      <type>ConnectedSystem?list</type>
+      <secured>hidden</secured>
+    </parameter> -->
+
+    <!-- TypedValue Parameters -->
+    <!-- <parameter>
+      <name>typedValueNotSecured</name>
+      <category>input-only</category>
+      <type>TypeValue</type>
+    </parameter> -->
+
+    <parameter>
+      <name>typedValueHidden</name>
+      <category>input-only</category>
+      <type>TypedValue</type>
+      <secured>hidden</secured>
+    </parameter>
+
+    <!-- TypedValue on frontend shouldn't be visible -->
+    <!-- <parameter>
+      <name>typedValueVisible</name>
+      <category>input-only</category>
+      <type>TypeValue</type>
+      <secured>visible</secured>
+    </parameter>
+
+    <parameter>
+      <name>typedValueArrVisible</name>
+      <category>input-only</category>
+      <type>TypeValue?list</type>
+      <secured>visible</secured>
+    </parameter> -->
+
+<!-- TODO: try after fixed -->
+    <!-- <parameter>
+      <name>typedValueArrHidden</name>
+      <category>input-only</category>
+      <type>TypeValue?list</type>
+      <secured>hidden</secured>
+    </parameter> -->
+
+
+
+
+
+
     <parameter>
       <name>hidden</name>
       <category>input-only</category>
